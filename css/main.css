@@ -1,0 +1,242 @@
+* {box-sizing: border-box;}
+
+body{
+  min-width: 1174px;
+  font: 400 15px/18px 'Roboto', sans-serif;
+  color: #8e8e8e;
+}
+
+a{
+  text-decoration: none;
+  font: 400 15px/18px 'Roboto', sans-serif;
+  color: #000;
+}
+
+.intro{
+  height: 100vh;
+  min-height: 530px;
+  display: flex;
+  background: #89898b;
+}
+
+.intro-content{
+  width: 1174px;
+  margin: auto;
+  height: 530px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 89px;
+  height: 88px;
+  margin-bottom: 53px;
+  background: url(../images/sprite.png) no-repeat 0 0;
+}
+
+.intro-content h1{
+  margin-bottom: 107px;
+  color: #ffe600;
+  font-size: 40px;
+  line-height: 42px;
+  font-weight: 300;
+  letter-spacing: 2.2px;
+  text-align: center;
+}
+.intro-content h1 span{
+  margin-bottom: 41px;
+  display: block;
+  letter-spacing: -0.1px;
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.link-explore{
+  min-width: 232px;
+  padding: 21px 15px;
+  margin-bottom: 46px;
+  text-align: center;
+  letter-spacing: -0.375px;
+  color: #fff;
+  border: 1px solid #ffe600;
+}
+
+.link-explore:hover{
+  background: #b1b1b3;
+}
+
+.arrow-down{
+  padding: 5px;
+}
+
+.arrow-down:after{
+  content: '\e900';
+  font-family: 'icomoon';
+  color: #fff;
+  font-size: 20px;
+}
+
+.main-header-wrapper{
+  min-height: 119px;
+  border-bottom: 1px solid #ffe600;
+  margin-bottom: 10px;
+}
+
+.main-header{
+  width: 1174px;
+  height: 119px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header span{
+  width: 186px;
+  height: 46px;
+  margin-left: 11px;
+  background: url(../images/sprite.png) no-repeat -104px -5px;
+}
+
+.navigation ul{
+  width: 552px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation ul li a{
+  padding: 11px 23px;
+  display: block;
+  border: 1px solid transparent;
+  color: #8e8e8e;
+  letter-spacing: -0.375px;
+}
+
+.navigation ul li a:hover,
+.navigation ul li a.active{
+  color: #131316;
+  border: 1px solid #ffe600;
+}
+
+.about-us,
+.portfolio{
+  width: 1174px;
+  margin: auto;
+  min-height: 567px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.portfolio{
+  min-height: 936px;
+}
+
+.about-us h2,
+.portfolio h2{
+  margin-bottom: 120px;
+  text-align: center; 
+  color: #131316;
+  font-size: 25px;
+  line-height: 28px;
+  letter-spacing: -0.625px;
+}
+
+.about-us h2 span,
+.portfolio h2 span{
+  margin-top: 24px;
+  display: block;
+  color: #ffe600;
+  font-size: 15px;
+  letter-spacing: -0.375px;
+}
+
+.about-us-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-us-list li{
+  width: 270px;
+  background: #f09;
+}
+
+.text-box-wrapper{
+  background: #ffeb33;
+}
+
+.text-box{
+  width: 1174px;
+  margin: auto;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-box h2,
+.text-box p{
+  text-align: center;
+}
+
+.text-box h2{
+  margin-bottom: 15px;
+  font: 300 italic 24px/40px 'Roboto', sans-serif;
+  color: #131316;
+  letter-spacing: 1.25px;
+}
+.text-box h2 em{
+  display: block;
+}
+.text-box p{
+  color: #fff;
+  letter-spacing: -0.375px;
+}
+.portfolio-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.portfolio-list li{
+  width: 270px;
+  height: 200px;
+  margin-bottom: 30px;
+  position: relative;
+  background: #f3f3f3;
+}
+
+.portfolio-list li div{
+  width: 270px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+  background: #ffeb33;
+}
+
+.portfolio-list li div span,
+.portfolio-list li div strong{
+  display: block;
+  text-align: center;
+}
+
+.portfolio-list li div strong{
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 30px;
+  color: #131316;
+  letter-spacing: -0.625px;
+}
+.portfolio-list li div span{
+  color: #fff;
+  letter-spacing: -0.375px;
+}
+.portfolio-list li:hover div{
+  display: flex;
+}
